@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <link rel="stylesheet" type="text/css" href="list.css">
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-		<title>Connect 4</title>
-	</head>
-	<body>
-        <div id="container">
-        </div>
-        <div id="win"></div>
-	</body>
-    <script type="text/javascript" src="list.js"></script> 
+
+<head>
+    <link rel="stylesheet" type="text/css" href="list.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Connect 4</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2 class="header">Connect 4</h4>
+            <div id="container"></div>
+            <div id="win"></div>
+            <h4 id="score"></h4>
+            <button onclick="main(1)" class="btn">Restart</button>
+            <button onclick="main(2)" class="btn">Newgame</button>
+    </div>
+</body>
+<script type="text/javascript" src="list.js"></script>
+
 </html>
