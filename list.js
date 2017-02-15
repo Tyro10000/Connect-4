@@ -6,6 +6,11 @@ var redw = 0;
 var yelw = 0;
 var grid = []; // h x w
 
+//circle presets
+var range = 50;
+var cxy = 25;
+var radius = 22;
+
 
 
 function add(lane) {
@@ -14,11 +19,11 @@ function add(lane) {
             var selector = lane + rowheight[0];
             if (turn) {
                 grid[rowheight[0]][0] = 1;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="red" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="red" /></svg>';
                 turn = false;
             } else {
                 grid[rowheight[0]][0] = 2;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="yellow" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="yellow" /></svg>';
                 turn = true;
             }
             rowheight[0]++;
@@ -28,11 +33,11 @@ function add(lane) {
 
             if (turn) {
                 grid[rowheight[1]][1] = 1;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="red" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="red" /></svg>';
                 turn = false;
             } else {
                 grid[rowheight[1]][1] = 2;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="yellow" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="yellow" /></svg>';
                 turn = true;
             }
             rowheight[1]++;
@@ -42,11 +47,11 @@ function add(lane) {
 
             if (turn) {
                 grid[rowheight[2]][2] = 1;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="red" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="red" /></svg>';
                 turn = false;
             } else {
                 grid[rowheight[2]][2] = 2;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="yellow" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="yellow" /></svg>';
                 turn = true;
             }
             rowheight[2]++;
@@ -56,11 +61,11 @@ function add(lane) {
 
             if (turn) {
                 grid[rowheight[3]][3] = 1;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="red" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="red" /></svg>';
                 turn = false;
             } else {
                 grid[rowheight[3]][3] = 2;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="yellow" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="yellow" /></svg>';
                 turn = true;
             }
             rowheight[3]++;
@@ -70,11 +75,11 @@ function add(lane) {
 
             if (turn) {
                 grid[rowheight[4]][4] = 1;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="red" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="red" /></svg>';
                 turn = false;
             } else {
                 grid[rowheight[4]][4] = 2;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="yellow" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="yellow" /></svg>';
                 turn = true;
             }
             rowheight[4]++;
@@ -84,11 +89,11 @@ function add(lane) {
 
             if (turn) {
                 grid[rowheight[5]][5] = 1;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="red" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="red" /></svg>';
                 turn = false;
             } else {
                 grid[rowheight[5]][5] = 2;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="yellow" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="yellow" /></svg>';
                 turn = true;
             }
             rowheight[5]++;
@@ -98,11 +103,11 @@ function add(lane) {
 
             if (turn) {
                 grid[rowheight[6]][6] = 1;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="red" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="red" /></svg>';
                 turn = false;
             } else {
                 grid[rowheight[6]][6] = 2;
-                document.getElementById(selector).innerHTML = '<svg width="40" height="40"><circle cx="20" cy="20" r="18"  fill="yellow" /></svg>';
+                document.getElementById(selector).innerHTML = '<svg width="' + range + '" height="' + range + '"><circle cx="' + cxy + '" cy="' + cxy + '" r="' + radius + '"  fill="yellow" /></svg>';
                 turn = true;
             }
             rowheight[6]++;
@@ -170,23 +175,6 @@ function check(side) {
 
     }
 
-
-
-    // for(h = 6; h > 0; h--){
-    //     streak = 0; var tally = 1;
-    //     for(w = 7; w > 0;w--){
-    //         if(grid[w][w] == side)
-    //             streak += 1;
-    //         else
-    //             streak = 0;
-    //             x--;
-    //         if(streak == 4){
-    //             win(side);
-    //             break;
-    //         }
-    //     }  
-    //     tally += 1; 
-    // }
 }
 
 function diag(side) {
@@ -269,5 +257,17 @@ function main(total) {
 
 }
 
+var extended = false;
+
+function extend_nav() {
+    if (extended)
+        document.getElementById("nav_extend").style.display = "none";
+    else
+        document.getElementById("nav_extend").style.display = "block";
+    if (extended)
+        extended = false;
+    else
+        extended = true;
+}
 
 main();
